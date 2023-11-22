@@ -1,0 +1,45 @@
+
+.floating-bubbles {
+    position: relative;
+    height: 100%;
+    max-width: 100%; /* Ensure it doesn't exceed the width of the viewport */
+    overflow: hidden; /* Hide any content that overflows the container */
+  }
+  
+  
+  .bubble {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .move {
+    animation: move 2s ease-in-out infinite alternate; /* Customize the animation properties */
+  }
+  
+  @keyframes move {
+    0% {
+     transform: translateX(-25px);
+    }
+    100% {
+        transform: translateX(25px);
+    }
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+        border-color: #6b21a8;
+        border-width: 7px; /* Initial border size */
+    }
+    50% {
+        border-color: #a21caf;
+        border-width: 14px; /* Increased border size */
+    }
+}
+
+.animate-blink {
+    animation: blink 2s infinite;
+}

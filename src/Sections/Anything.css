@@ -1,0 +1,33 @@
+.picture-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .row {
+    display: flex;
+    animation: moveRows 15s linear infinite; /* Adjust the animation duration as needed */
+  }
+  .roww {
+    display: flex;
+    animation: moveRowss 15s linear infinite; /* Adjust the animation duration as needed */
+  }
+  
+
+  
+  @keyframes moveRows {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* Adjust the distance to move the rows */
+    }
+  }
+  @keyframes moveRowss {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0); /* Adjust the distance to move the rows */
+    }
+  }
+  
