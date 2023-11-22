@@ -106,7 +106,7 @@ const handleMouseEnter5 = () => {
     };
   }, []);
   return (
-   <nav className={`bg-transparent  top-0 right-0 w-full  z-50 ${!isFixed? 'fixed':'relative'} transition-all ease-in-out duration-700`}>
+   <nav className={`bg-transparent  top-0 right-0 w-full  z-40 ${!isFixed? 'fixed':'relative'} transition-all ease-in-out duration-700`}>
   {!ismenuevisible&&  <div className="flex justify-between sm:p-8 sm:px-10 p-6 w-full sm:items-end ">
         <div className="sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] ">
             <img src="/logo.png" alt="logo"  />

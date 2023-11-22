@@ -8,10 +8,11 @@ import Grids from './Sections/Grids'
 import Anything from './Sections/Anything'
 import Paykart from './Sections/Paykart'
 import Reward from './Sections/Reward'
+import Model from './Sections/Model'
 const App = () => {
   return (
     <div>
-
+      <Model></Model>
       <Hero></Hero>
       <Discover></Discover>
       <Discover2></Discover2>
