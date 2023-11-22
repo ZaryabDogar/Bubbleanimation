@@ -5,13 +5,33 @@
   
   .row {
     display: flex;
-    animation: moveRows 15s linear infinite; /* Adjust the animation duration as needed */
+    animation: moveRows 20s linear infinite; /* Adjust the animation duration as needed */
   }
-  .roww {
+
+
+  /* Animation for larger screens */
+@media (min-width: 768px) {
+    .row {
+      animation: moveRows 20s linear infinite; /* Adjust the animation duration as needed */
+    } 
+     .roww {
     display: flex;
-    animation: moveRowss 15s linear infinite; /* Adjust the animation duration as needed */
+    animation: moveRowss 20s linear infinite; /* Adjust the animation duration as needed */
   }
   
+  }
+  
+  /* Animation for smaller screens */
+  @media (max-width: 767px) {
+    .row {
+        animation: moveRows 10s linear infinite; /* Adjust the animation duration as needed */
+      } 
+       .roww {
+      display: flex;
+      animation: moveRowss 10s linear infinite; /* Adjust the animation duration as needed */
+    }
+  }
+
 
   
   @keyframes moveRows {
